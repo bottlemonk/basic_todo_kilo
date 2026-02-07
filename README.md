@@ -103,6 +103,22 @@ npm run start    # Start production server
 npm run lint     # Run ESLint
 ```
 
+## Deploy to Cloudflare Pages
+
+This app is configured as a static Next.js export for Cloudflare Pages.
+
+### Build settings
+
+- **Framework preset:** `None` (or `Next.js` with custom settings)
+- **Build command:** `npm run build`
+- **Build output directory:** `out`
+
+### Notes
+
+- `next.config.js` uses `output: "export"`.
+- The generated static site is written to `out/`.
+- No Node server runtime is required on Pages for this app.
+
 ## Browser Support
 
 - Chrome 90+
