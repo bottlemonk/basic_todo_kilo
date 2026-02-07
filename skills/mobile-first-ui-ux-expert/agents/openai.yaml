@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mobile First UI UX Expert"
+  short_description: "Design mobile-first UI/UX with responsive, accessible delivery"
+  default_prompt: "Use this skill to design and implement mobile-first interfaces with strong UX, responsive behavior, and accessibility."
