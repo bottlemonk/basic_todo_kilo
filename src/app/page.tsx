@@ -9,7 +9,6 @@ import { TodoList } from "@/components/todo-list"
 import { CompletedSection } from "@/components/completed-section"
 import { SearchFilter } from "@/components/search-filter"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { ProgressBar } from "@/components/progress-bar"
 import { PwaInstallPrompt } from "@/components/pwa-install-prompt"
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts"
 import { getStorageUsage } from "@/lib/storage"
@@ -327,8 +326,6 @@ export default function HomePage() {
           className="hidden"
           onChange={(event) => handleImportJson(event.target.files?.[0] ?? null)}
         />
-
-        <ProgressBar todos={todos} />
 
         <section className="mb-8">
           <TodoInput onAdd={handleAddTodo} availableTags={availableTags} />
