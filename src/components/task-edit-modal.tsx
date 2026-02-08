@@ -22,6 +22,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
@@ -285,6 +286,16 @@ export function TaskEditModal({
             </AlertDialogContent>
           </AlertDialog>
         </div>
+
+        <DialogFooter>
+          <Button
+            type="button"
+            className="min-h-11 w-full"
+            onClick={() => onOpenChange(false)}
+          >
+            Save
+          </Button>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   )
