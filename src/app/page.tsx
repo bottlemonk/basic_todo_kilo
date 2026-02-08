@@ -7,7 +7,6 @@ import { useTodos } from "@/hooks/use-todos"
 import { TodoInput } from "@/components/todo-input"
 import { TodoList } from "@/components/todo-list"
 import { CompletedSection } from "@/components/completed-section"
-import { SearchFilter } from "@/components/search-filter"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { PwaInstallPrompt } from "@/components/pwa-install-prompt"
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts"
@@ -328,21 +327,7 @@ export default function HomePage() {
         />
 
         <section className="mb-8">
-          <TodoInput onAdd={handleAddTodo} availableTags={availableTags} />
-        </section>
-
-        <section className="mb-6">
-          <SearchFilter
-            searchQuery={searchQuery}
-            onSearchQueryChange={setSearchQuery}
-            selectedPriorities={selectedPriorities}
-            onTogglePriority={togglePriorityFilter}
-            selectedTags={selectedTags}
-            onToggleTag={toggleTagFilter}
-            availableTags={availableTags}
-            sortMode={sortMode}
-            onSortModeChange={setSortMode}
-          />
+          <TodoInput onAdd={handleAddTodo} />
         </section>
 
         <section>
